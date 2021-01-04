@@ -1,0 +1,76 @@
+@import "NULLstyles.scss";
+
+//====Шрифты=====
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+
+body{
+	font-family: 'Raleway', sans-serif;
+	//===основной цвет текста===
+	color: #6c7279;
+
+	background-color: #ad0e00;
+}
+
+//=====Container====
+
+.container{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+
+//=======header=====
+
+.header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #4d4f65;
+	padding: 40px 0px;
+
+	.header_logo{}
+	.nav{
+		display: flex;
+
+		.nav_link{
+		margin-left: 55px;	
+		opacity: 0.75;
+		color: #ffffff;
+		font-weight: 700;
+		text-transform: uppercase;
+		transition: opacity .2s linear;
+
+		}
+
+		.nav_link:first-child{
+			margin: 0px;
+		}
+
+		.nav_link:hover{
+			opacity: 1;
+			text-decoration: underline;
+		}
+	}
+	
+}
+//==========/header======
+
+//=========intro=======
+
+.intro{
+	height: 750px;
+
+	background: url('../img/33.jpg');
+	background-size: cover;
+	position: relative;
+}
